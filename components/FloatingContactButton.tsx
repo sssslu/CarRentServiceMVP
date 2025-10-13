@@ -14,16 +14,14 @@ export default function FloatingContactButton() {
         {open ? (
           <div className="flex flex-col items-center justify-center w-full h-full">
             <span className="text-xl font-bold mb-2">직접 문의하기</span>
-            <span className="mb-1">한국 본사</span>
+            <span className="mb-1 text-xs">한국 본사</span>
             <span className="mb-1">📞 010-3025-7321</span>
             <span className="mb-1">✉️ maridall@naver.com</span>
-            <button
-              className="mt-4 px-4 py-2 bg-white text-blue-600 rounded-full shadow"
-              onClick={e => { e.stopPropagation(); setOpen(false); }}
-            >닫기</button>
+            <span className="mb-1 text-xs">24시간 운영</span>
+
           </div>
         ) : (
-          <span className="text-2xl">💬</span>
+          <img src="/button.png" alt="Chat Bubble" className="w-8 h-8" />
         )}
       </button>
     </div>
