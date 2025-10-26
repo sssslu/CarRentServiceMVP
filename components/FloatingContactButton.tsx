@@ -7,7 +7,7 @@ export default function FloatingContactButton() {
   return (
     <div className="fixed bottom-6 right-6 z-50">
       <button
-        className={`bg-blue-600 text-white rounded-full shadow-lg transition-all duration-300 flex items-center justify-center ${open ? 'w-64 h-64' : 'w-16 h-16'}`}
+        className={`bg-primary text-white rounded-full shadow-lg transition-all duration-300 flex items-center justify-center ${open ? 'w-64 h-64' : 'w-16 h-16'}`}
         onClick={() => setOpen(!open)}
         aria-label="Contact"
       >

@@ -5,7 +5,7 @@ import FloatingContactButton from '../components/FloatingContactButton';
 import type { ReactNode } from 'react';
 
 export const metadata = {
-  title: 'RS Corp',
+  title: 'LunaVan',
   description: '캠핑카/승용차 간편 대여!',
 };
 

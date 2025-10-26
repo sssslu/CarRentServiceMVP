@@ -3,7 +3,7 @@
 import { useState } from 'react';
 
 /**
- * SearchForm component models the booking form seen on the RS home page.
+ * SearchForm component models the booking form seen on the LunaVan home page.
  * It collects the car type, pick‑up/return dates and times. The submit
  * handler currently just alerts the user; in a production app this would
  * trigger a search query or navigation.
@@ -83,7 +83,7 @@ export default function SearchForm() {
       </div>
       <button
         type="submit"
-        className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition-colors"
+        className="w-full bg-primary text-white py-2 rounded hover:bg-primary-dark transition-colors"
       >
         검색
       </button>

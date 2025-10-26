@@ -16,7 +16,7 @@ export default function Footer() {
             href="/biz-license.jpg" // public 폴더 안의 이미지 경로
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
+            className="text-primary hover:underline"
           >
             사업자등록증
           </a>

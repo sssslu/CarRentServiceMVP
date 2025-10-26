@@ -14,9 +14,9 @@ export default function Hero() {
     >
       <div className="max-w-4xl mx-auto px-4 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4">
-          일상에서 여행까지 행복한 이동의 시작
+          빛나는 밤, 떠나는 집
         </h1>
-        <p className="text-lg sm:text-xl mb-8">캠핑카부터 승용차까지, RS</p>
+  <p className="text-lg sm:text-xl mb-8">LunaVan, 오늘 밤의 쉼표</p>
       </div>
     </section>
   );

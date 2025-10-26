@@ -2,4 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-/* You can place any global styles here. */
+/* LunaVan global fonts and variables */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap');
+
+:root {
+	--color-primary: #1E2A38; /* Midnight Blue */
+	--font-english: 'Cormorant Garamond', serif;
+	--font-korean: 'Noto Serif KR', serif;
+}
+
+/* Default to the Korean serif for overall layout (good for mixed-content pages). */
+html, body {
+	font-family: var(--font-korean);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the English display serif for elements explicitly marked as English. */
+:lang(en) {
+	font-family: var(--font-english);
+}
+
+/* Headings: allow heavier weight for visual hierarchy. */
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+/* Ensure strong/emphasis render bold when expected */
+strong, b {
+	font-weight: 700;
+}
+
+/* Small utility to reference primary color in plain CSS (Tailwind utilities preferred). */
+.lnv-primary {
+	color: var(--color-primary);
+}
+
+/* You can place additional global styles here. */
