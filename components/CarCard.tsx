@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 /**
  * Interface describing the shape of a car object used throughout the app.
  */
@@ -17,7 +19,10 @@ export interface Car {
  */
 export default function CarCard({ car }: { car: Car }) {
   return (
-    <div className="border rounded shadow-sm overflow-hidden hover:shadow-md transition-shadow bg-white">
+    <Link 
+      href={`/cars/${car.id}`}
+      className="block border rounded shadow-sm overflow-hidden hover:shadow-md transition-all bg-white hover:scale-[1.02] cursor-pointer"
+    >
       <div className="h-40 w-full overflow-hidden">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -33,6 +38,6 @@ export default function CarCard({ car }: { car: Car }) {
         </p>
         <p className="font-bold">{car.pricePerDay.toLocaleString()}원/일</p>
       </div>
-    </div>
+    </Link>
   );
 }

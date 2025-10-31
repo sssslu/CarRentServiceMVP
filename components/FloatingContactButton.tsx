@@ -1,7 +1,14 @@
 "use client";
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function FloatingContactButton() {
+  const pathname = usePathname();
+  
+  // Hide button if we're on a car detail page
+  if (pathname.startsWith('/cars/')) {
+    return null;
+  }
   const [open, setOpen] = useState(false);
 
   return (
