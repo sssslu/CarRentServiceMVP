@@ -1,7 +1,17 @@
+'use client';
+
+import { usePathname } from 'next/navigation';
+
 /**
  * Footer component with company information and a clickable business license link.
  */
 export default function Footer() {
+  const pathname = usePathname();
+  
+  // Hide footer if we're on a car detail page
+  if (pathname.startsWith('/cars/')) {
+    return null;
+  }
   return (
     <footer className="bg-gray-100 text-sm text-gray-600">
       <div className="max-w-6xl mx-auto px-4 py-6">

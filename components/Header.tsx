@@ -14,7 +14,6 @@ export default function Header() {
         <nav className="space-x-4">
           <a href="/#camp" className="hover:text-primary">캠핑카</a>
           <a href="/#norm" className="hover:text-primary">승용차</a>
-          <Link href="/cars" className="hover:text-primary">전체</Link>
           <Link href="/location" className="hover:text-primary">오시는 길</Link>
         </nav>
       </div>

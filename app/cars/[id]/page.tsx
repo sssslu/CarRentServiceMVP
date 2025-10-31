@@ -26,7 +26,7 @@ export default function CarDetailPage() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-4 py-8 pb-24">
       {/* Main Image Section */}
       <div className="mb-8 rounded-lg overflow-hidden shadow-lg">
         <img
