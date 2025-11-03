@@ -5,7 +5,7 @@ export default function ConvertPage() {
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">개조 문의</h1>
 
-      <p className="mb-4">당신의 차를 캠핑카로 개조하세요. 일반차량도 문제 없습니다. 사용하지 않으실 땐 다른분들께 대여 및 수익을 창출해보세요!</p>
+      <p className="mb-4">당신의 차량을 캠핑카로 개조하세요! 일반 차량도 문제 없습니다. 사용하지 않으실 땐 다른 분들께 대여하여 수익을 창출해보세요!</p>
 
   <h2 className="text-xl font-semibold mb-2 mt-20">이동의 자유, 감성의 기술</h2>
       <p className="mb-6 italic">Freedom to move, Technology that feels.</p>
