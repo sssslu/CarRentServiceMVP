@@ -15,6 +15,8 @@ export default function Header() {
           <a href="/#camp" className="hover:text-primary">캠핑카</a>
           <a href="/#norm" className="hover:text-primary">승용차</a>
           <Link href="/location" className="hover:text-primary">오시는 길</Link>
+          <Link href="/convert" className="hover:text-primary">개조 문의</Link>
+          <Link href="/owners" className="hover:text-primary">차주 모집</Link>
         </nav>
       </div>
     </header>

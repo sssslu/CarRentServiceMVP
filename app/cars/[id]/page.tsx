@@ -1,16 +1,14 @@
-'use client';
-
-import { useParams } from 'next/navigation';
 import Link from 'next/link';
-import { useState } from 'react';
-import { allCars } from '../../../data/cars';
-import ReservationModal from '../../../components/ReservationModal';
+import { allCars } from '@/data/cars';
+import ReservationCTA from '@/components/ReservationCTA';
 
-export default function CarDetailPage() {
-  const params = useParams();
-  const carId = parseInt(params.id as string);
-  const car = allCars.find(c => c.id === carId);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+export async function generateStaticParams() {
+  return allCars.map((c) => ({ id: c.id.toString() }));
+}
+
+export default function CarDetailPage({ params }: { params: { id: string } }) {
+  const carId = parseInt(params.id);
+  const car = allCars.find((c) => c.id === carId);
 
   if (!car) {
     return (
@@ -78,29 +76,14 @@ export default function CarDetailPage() {
           {Object.entries(car.specs).map(([key, value]) => (
             <div key={key} className="bg-gray-50 p-4 rounded-lg">
               <p className="text-gray-600 text-sm mb-1">{key}</p>
-              <p className="font-medium">{value}</p>
+              <p className="font-medium">{String(value)}</p>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Reservation Button */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-white border-t shadow-lg">
-        <div className="max-w-6xl mx-auto">
-          <button 
-            onClick={() => setIsModalOpen(true)}
-            className="w-full bg-primary text-white py-4 rounded-lg font-bold hover:bg-opacity-90 transition-all text-lg"
-          >
-            예약하기
-          </button>
-        </div>
-      </div>
-
-      {/* Reservation Modal */}
-      <ReservationModal 
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
-      />
+      {/* Reservation CTA (client) */}
+      <ReservationCTA />
     </div>
   );
 }

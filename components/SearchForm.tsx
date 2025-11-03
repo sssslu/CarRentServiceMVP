@@ -18,7 +18,7 @@ export default function SearchForm() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // In a real app you would send these parameters to an API or navigate to a results page.
-    alert('검색 기능은 아직 구현되지 않았습니다. 현재 선택된 값:\n' +
+    alert('차량 선택후 직접 문의 부탁드립니다!!\n\n' +
       `차량 종류: ${carType === 'camper' ? '캠핑카' : '승용차'}\n` +
       `픽업 일시: ${pickupDate} ${pickupTime}\n` +
       `반납 일시: ${returnDate} ${returnTime}`);
