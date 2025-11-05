@@ -22,12 +22,12 @@ export default function ConvertPage() {
           <img src="/images/convert-2.jpg" alt="제작 중" className="w-full h-96 object-cover rounded shadow-sm" />
         </div>
         <div>
-          <p className="mb-2 font-semibold">완성</p>
+          <p className="mb-2 font-semibold">완성 (후면)</p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/convert-3.jpg" alt="완성" className="w-full h-96 object-cover rounded shadow-sm" />
         </div>
         <div>
-          <p className="mb-2 font-semibold">완성 (후면)</p>
+          <p className="mb-2 font-semibold">완성 (옆면)</p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img src="/images/convert-4.jpg" alt="완성 후면" className="w-full h-96 object-cover rounded shadow-sm" />
         </div>
