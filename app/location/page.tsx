@@ -30,7 +30,7 @@ export default function LocationPage() {
 
         {/* Address Text */}
         <div className="text-center text-lg">
-          대구광역시 중구 명덕로 179, 2층 202-j123호
+          충청북도 청주시 흥덕구 가경로8-1, 5층5608호 (가경동, 태경빌딩)
         </div>
 
         {/* Open in Google Maps Button */}

@@ -16,7 +16,7 @@ export default function Footer() {
     <footer className="bg-gray-100 text-sm text-gray-600">
       <div className="max-w-6xl mx-auto px-4 py-6">
         <p className="mb-2">&copy; 2025 알에스무역. All rights reserved.</p>
-        <p className="mb-2">주소: 충청북도청주시흥덕구가경로8-1,5층5608호(가경동, 태경빌딩)</p>
+        <p className="mb-2">주소: 충청북도 청주시 흥덕구 가경로8-1, 5층5608호 (가경동, 태경빌딩)</p>
         <p className="mb-2">대표번호: 010-3025-7321</p>
         <p className="mb-2">이메일: maridall@naver.com</p>
 
